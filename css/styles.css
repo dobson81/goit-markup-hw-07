@@ -208,7 +208,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--gray);
 }
-.container .images-studio-top {
+.container .work__images {
   margin: auto;
 }
 .work__title {
@@ -221,7 +221,7 @@ body {
   margin-bottom: 50px;
 }
 
-.images-studio-top {
+.work__images {
   list-style-type: none;
   display: flex;
   margin-top: 50px;
@@ -230,7 +230,7 @@ body {
   justify-content: space-between;
   padding: 0px 15px;
 }
-.li-box {
+.work__item {
   position: relative;
 }
 
@@ -247,7 +247,7 @@ body {
 .work {
   padding-top: 0;
 }
-.images-studio-top p {
+.work__images p {
   text-transform: uppercase;
   font-size: 14px;
   color: var(--white);
