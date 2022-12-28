@@ -20,36 +20,36 @@
       rel="stylesheet"
     />
   </head>
-
+  <!--header-->
   <body>
     <div class="wrapper">
-      <header class="top-nav">
-        <div class="container" style="background-color: var(--white)">
+      <header class="page-header">
+        <div class="container">
           <div class="top-box">
-            <a class="logo" href="#"><span class="logo-first-letters">Web</span>Studio</a>
+            <a class="top-box__logo-link" href="#"
+              ><span class="top-box__logo-link--blue">Web</span>Studio</a
+            >
 
             <nav>
               <ul class="menu">
-                <li class="line"><a href="#">Agencja</a></li>
+                <li class="menu__line"><a href="#">Agencja</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
               </ul>
             </nav>
             <ul class="contacts">
-              <li class="list-item-address">
-                <a class="mail-icon-nav" href="mailto:info@devstudio.com" target="_blank">
-                  <svg class="envelope" width="16" height="12">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com" target="_blank">
+                  <svg class="contacts__icon-envelope" width="16" height="12">
                     <use href="images/icons.svg#message"></use>
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
 
-              <li class="list-item-address"></li>
-
               <li>
-                <a class="tel-icon-nav" href="tel:+48111111111" target="_blank"
-                  ><svg class="smartphone" width="10" height="16">
+                <a class="contacts__link" href="tel:+48111111111" target="_blank"
+                  ><svg class="contacts__icon-smartphone" width="10" height="16">
                     <use href="images/icons.svg#phone"></use>
                   </svg>
                   +48 111 111 111</a
@@ -59,24 +59,20 @@
           </div>
         </div>
       </header>
-
+      <!-- <hero"> -->
       <main>
-        <!--zmienic nazwe-->
-        <section class="section darkGray">
-          <!-- <div class="big-title"> -->
-          <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <section class="section hero">
+          <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-          <button class="button" type="button" data-modal-open>Zamów usługę</button>
-
-          <!-- </div> -->
+          <button class="hero__button" type="button" data-modal-open>Zamów usługę</button>
         </section>
 
-        <section class="section">
+        <section class="section features">
           <div class="container">
-            <ul class="description-list">
-              <li class="lorem-item">
-                <svg class="antenna" width="65.32" height="70">
-                  <use class="satelite" href="images/icons.svg#satelite"></use>
+            <ul class="features-list">
+              <li class="features-list__item">
+                <svg class="features-list__icon" width="65.32" height="70">
+                  <use href="images/icons.svg#satelite"></use>
                 </svg>
                 <h4>Lorem ipsum</h4>
                 <p>
@@ -84,8 +80,8 @@
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li class="lorem-item">
-                <svg class="antenna" width="66.96" height="70">
+              <li class="features-list__item">
+                <svg class="features-list__icon" width="66.96" height="70">
                   <use href="images/icons.svg#clock"></use>
                 </svg>
                 <h4>Lorem ipsum</h4>
@@ -94,8 +90,8 @@
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li class="lorem-item">
-                <svg class="antenna" width="70" height="70">
+              <li class="features-list__item">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="images/icons.svg#diagram1"></use>
                 </svg>
                 <h4>Lorem ipsum</h4>
@@ -104,8 +100,8 @@
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li class="lorem-item">
-                <svg class="antenna" width="54.83" height="60.66">
+              <li class="features-list__item">
+                <svg class="features-list__icon" width="54.83" height="60.66">
                   <use href="images/icons.svg#astronaut"></use>
                 </svg>
                 <h4>Lorem ipsum</h4>
@@ -118,9 +114,9 @@
           </div>
         </section>
 
-        <section class="section what-we-do">
+        <section class="section work">
           <div class="container">
-            <h2 class="small-title">Czym się zajmujemy</h2>
+            <h2 class="work__title">Czym się zajmujemy</h2>
             <ul class="images-studio-top">
               <li class="li-box">
                 <img src="images/img.jpg" alt="Ręce na klawiaturze" width="370" height="294" />
