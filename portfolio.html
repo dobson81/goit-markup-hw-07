@@ -24,33 +24,37 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="top-nav">
-        <div class="container" style="background-color: var(--white)">
+      <!--header-->
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="container">
           <div class="top-box">
-            <a class="logo" href="index.html"><span class="logo-first-letters">Web</span>Studio</a>
+            <a class="top-box__logo-link" href="index.html"
+              ><span class="top-box__logo-link--blue">Web</span>Studio</a
+            >
 
-            <nav>
+            <nav class="nav">
               <ul class="menu">
-                <li><a href="index.html">Agencja</a></li>
-                <li class="menu__line"><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <!--dopytać mentora czy moze byc taki modyfikator-->
+                <li class="menu__item"><a class="menu__link" href="index.html">Agencja</a></li>
+                <li class="menu__item--line"><a class="menu__link" href="portfolio.html">Portfolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
               </ul>
             </nav>
             <ul class="contacts">
-              <li class="list-item-address">
-                <a class="mail-icon-nav" href="mailto:info@devstudio.com" target="_blank">
-                  <svg class="envelope" width="16" height="12">
+              <li class="contacts__item--left">
+                <a class="contacts__link" href="mailto:info@devstudio.com" target="_blank">
+                  <svg class="contacts__icon-envelope" width="16" height="12">
                     <use href="images/icons.svg#message"></use>
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
 
-              <li class="list-item-address"></li>
-
-              <li>
-                <a class="tel-icon-nav" href="tel:+48111111111" target="_blank"
-                  ><svg class="smartphone" width="10" height="16">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+48111111111" target="_blank"
+                  ><svg class="contacts__icon-smartphone" width="10" height="16">
                     <use href="images/icons.svg#phone"></use>
                   </svg>
                   +48 111 111 111</a
@@ -60,7 +64,6 @@
           </div>
         </div>
       </header>
-
       <main>
         <section class="section">
           <div class="container">
@@ -251,9 +254,9 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container footer-container portfolio-container">
+        <div class="container footer__container portfolio-container">
           <div class="logoAndAddress">
-            <a class="logo-footer" href="#"><span class="logo-first-letters">Web</span>Studio</a>
+            <a class="footer__logo" href="#"><span class="top-box__logo-link--blue">Web</span>Studio</a>
 
             <address>
               <ul class="footer-address">

@@ -30,15 +30,18 @@
               ><span class="top-box__logo-link--blue">Web</span>Studio</a
             >
 
-            <nav>
+            <nav class="nav">
               <ul class="menu">
-                <li class="menu__line"><a href="#">Agencja</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <!--dopytać mentora czy moze byc taki modyfikator-->
+                <li class="menu__item--line"><a class="menu__link" href="#">Agencja</a></li>
+                <li class="menu__item">
+                  <a class="menu__link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
               </ul>
             </nav>
             <ul class="contacts">
-              <li class="contacts__item">
+              <li class="contacts__item--left">
                 <a class="contacts__link" href="mailto:info@devstudio.com" target="_blank">
                   <svg class="contacts__icon-envelope" width="16" height="12">
                     <use href="images/icons.svg#message"></use>
@@ -47,7 +50,7 @@
                 >
               </li>
 
-              <li>
+              <li class="contacts__item">
                 <a class="contacts__link" href="tel:+48111111111" target="_blank"
                   ><svg class="contacts__icon-smartphone" width="10" height="16">
                     <use href="images/icons.svg#phone"></use>
@@ -74,8 +77,8 @@
                 <svg class="features-list__icon" width="65.32" height="70">
                   <use href="images/icons.svg#satelite"></use>
                 </svg>
-                <h4 class="feature-list__title">Lorem ipsum</h4>
-                <p>
+                <h4 class="features-list__title">Lorem ipsum</h4>
+                <p class="features-list__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -84,8 +87,8 @@
                 <svg class="features-list__icon" width="66.96" height="70">
                   <use href="images/icons.svg#clock"></use>
                 </svg>
-                <h4 class="feature-list__title">Lorem ipsum</h4>
-                <p>
+                <h4 class="features-list__title">Lorem ipsum</h4>
+                <p class="features-list__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -94,8 +97,8 @@
                 <svg class="features-list__icon" width="70" height="70">
                   <use href="images/icons.svg#diagram1"></use>
                 </svg>
-                <h4 class="feature-list__title">Lorem ipsum</h4>
-                <p>
+                <h4 class="features-list__title">Lorem ipsum</h4>
+                <p class="features-list__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -104,8 +107,8 @@
                 <svg class="features-list__icon" width="54.83" height="60.66">
                   <use href="images/icons.svg#astronaut"></use>
                 </svg>
-                <h4 class="feature-list__title">Lorem ipsum</h4>
-                <p>
+                <h4 class="features-list__title">Lorem ipsum</h4>
+                <p class="features-list__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
@@ -121,19 +124,19 @@
               <li class="work__item">
                 <img src="images/img.jpg" alt="Ręce na klawiaturze" width="370" height="294" />
                 <div class="box-box">
-                  <p class="work__function">Aplikacje Komputerowe</p>
+                  <p class="work__text">Aplikacje Komputerowe</p>
                 </div>
               </li>
               <li class="work__item">
                 <img src="images/img1.jpg" alt="Praca z laptopem" width="370" height="294" />
                 <div class="box-box">
-                  <p class="work__function">Aplikacje mobilne</p>
+                  <p class="work__text">Aplikacje mobilne</p>
                 </div>
               </li>
               <li class="work__item">
                 <img src="images/img2.jpg" alt="Praca z tabletem" width="370" height="294" />
                 <div class="box-box">
-                  <p class="work__function">rozwiązania graficzne</p>
+                  <p class="work__text">rozwiązania graficzne</p>
                 </div>
               </li>
             </ul>
@@ -142,52 +145,47 @@
         <!--STUFF-->
         <section class="section worker-list-section stuff">
           <div class="container">
-            <h2 class="stuff__title">Nasz zespół</h2>
+            <h2 class="stuff__big-title">Nasz zespół</h2>
             <ul class="stuff__list">
               <li class="stuff__item">
                 <figure>
                   <img src="images/img3.jpg" width="270" height="260" alt="John Doe" />
                   <figcaption>
-                    <h3>John Doe</h3>
-                    <p>Product Designer</p>
+                    <h3 class="stuff__title">John Doe</h3>
+                    <p class="stuff__text">Product Designer</p>
                   </figcaption>
                 </figure>
-                <div class="icons-social">
-                  <div class="logo-instagram">
-                    <div class="circle">
-                      <a class="instagram-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </div>
+                <div class="stuff__box">
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-twitter">
-                    <div class="circle">
-                      <a class="twitter-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-facebook">
-                    <div class="circle">
-                      <a class="facebook-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-linkedin">
-                    <div class="circle">
-                      <a class="linkedin-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#likedin"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#likedin"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -196,46 +194,42 @@
                 <figure>
                   <img src="images/img4.jpg" width="270" height="260" alt="John Doe" />
                   <figcaption>
-                    <h3>Jane Doe</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="stuff__title">Jane Doe</h3>
+
+                    <p class="stuff__text">Frontend Developer</p>
                   </figcaption>
                 </figure>
-                <div class="icons-social">
-                  <div class="logo-instagram">
-                    <div class="circle">
-                      <a class="instagram-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </div>
+                <div class="stuff__box">
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-twitter">
-                    <div class="circle">
-                      <a class="twitter-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-facebook">
-                    <div class="circle">
-                      <a class="facebook-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-linkedin">
-                    <div class="circle">
-                      <a class="linkedin-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#likedin"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#likedin"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -244,46 +238,41 @@
                 <figure>
                   <img src="images/img5.jpg" width="270" height="260" alt="John Doe" />
                   <figcaption>
-                    <h3>John Doe</h3>
-                    <p>Marketing</p>
+                    <h3 class="stuff__title">John Doe</h3>
+                    <p class="stuff__text">Marketing</p>
                   </figcaption>
                 </figure>
-                <div class="icons-social">
-                  <div class="logo-instagram">
-                    <div class="circle">
-                      <a class="instagram-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </div>
+                <div class="stuff__box">
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-twitter">
-                    <div class="circle">
-                      <a class="twitter-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-facebook">
-                    <div class="circle">
-                      <a class="facebook-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-linkedin">
-                    <div class="circle">
-                      <a class="linkedin-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#likedin"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#likedin"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -291,94 +280,91 @@
                 <figure>
                   <img src="images/img6.jpg" width="270" height="260" alt="John Doe" />
                   <figcaption>
-                    <h3>John Doe</h3>
-                    <p>Ul Designer</p>
+                    <h3 class="stuff__title">John Doe</h3>
+                    <p class="stuff__text">Ul Designer</p>
                   </figcaption>
                 </figure>
-                <div class="icons-social">
-                  <div class="logo-instagram">
-                    <div class="circle">
-                      <a class="instagram-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                <div class="stuff__box">
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-twitter">
-                    <div class="circle">
-                      <a class="twitter-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-facebook">
-                    <div class="circle">
-                      <a class="facebook-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </div>
-                  <div class="logo-linkedin">
-                    <div class="circle">
-                      <a class="linkedin-icon-john" href="#">
-                        <svg class="icons-social-links" width="20" height="20">
-                          <use href="images/icons.svg#likedin"></use>
-                        </svg>
-                      </a>
-                    </div>
+
+                  <div class="stuff__circle">
+                    <a class="stuff__link" href="#">
+                      <svg class="stuff__icon" width="20" height="20">
+                        <use href="images/icons.svg#likedin"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-        <section class="section">
+        <!--CLIENTS-->
+        <section class="section clients">
           <div class="container our-clients-container">
-            <h2 class="ourClients">Nasi klienci</h2>
-            <div class="container-icons">
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+            <h2 class="clients__title">Nasi klienci</h2>
+            <div class="clients__icons">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo1"></use>
                   </svg>
                 </a>
               </div>
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo2"></use>
                   </svg>
                 </a>
               </div>
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo3"></use>
                   </svg>
                 </a>
               </div>
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo4"></use>
                   </svg>
                 </a>
               </div>
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo5"></use>
                   </svg>
                 </a>
               </div>
-              <div class="client">
-                <a class="logo-icons" href="#">
-                  <svg class="iconsClients" width="106" height="60.04">
+              <div class="clients__box">
+                <a class="clients__link" href="#">
+                  <svg class="clients__picture" width="106" height="60.04">
                     <use href="images/icons.svg#logo6"></use>
                   </svg>
                 </a>
@@ -389,9 +375,11 @@
       </main>
 
       <footer class="footer">
-        <div class="container footer-container">
-          <div class="logoAndAddress">
-            <a class="logo-footer" href="#"><span class="logo-first-letters">Web</span>Studio</a>
+        <div class="container footer__container">
+          <div class="footer__box">
+            <a class="footer__logo" href="#"
+              ><span class="top-box__logo-link--blue">Web</span>Studio</a
+            >
 
             <address>
               <ul class="footer-address">
