@@ -294,40 +294,40 @@
               </ul>
             </address>
           </div>
-          <div class="footer-items">
-            <p>Dołącz do nas</p>
-            <div class="footer-icons">
-              <div class="social-icons-footer">
-                <div class="footer-circle">
-                  <a class="bottom-icons" href="#">
-                    <svg class="footer-instagram" width="20" height="20">
+          <div class="social-icons">
+            <p class="social-icons__text">Dołącz do nas</p>
+            <div class="social-icons__box">
+              <div class="social-icons__smallBox">
+                <div class="social-icons__circle">
+                  <a class="social-icons__link" href="#">
+                    <svg class="social-icons__svg" width="20" height="20">
                       <use href="images/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </div>
               </div>
-              <div class="social-icons-footer">
-                <div class="footer-circle">
-                  <a class="bottom-icons" href="#">
-                    <svg class="footer-twitter" width="20" height="20">
+              <div class="social-icons__smallBox">
+                <div class="social-icons__circle">
+                  <a class="social-icons__link" href="#">
+                    <svg class="social-icons__svg" width="20" height="20">
                       <use href="images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </div>
               </div>
-              <div class="social-icons-footer">
-                <div class="footer-circle">
-                  <a class="bottom-icons" href="#">
-                    <svg class="footer-facebook facebook-facebook" width="20" height="20">
+              <div class="social-icons__smallBox">
+                <div class="social-icons__circle">
+                  <a class="social-icons__link" href="#">
+                    <svg class="social-icons__svg" width="20" height="20">
                       <use href="images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </div>
               </div>
-              <div class="social-icons-footer">
-                <div class="footer-circle">
-                  <a class="bottom-icons" href="#">
-                    <svg class="footer-linkedin" width="20" height="20">
+              <div class="social-icons__smallBox">
+                <div class="social-icons__circle">
+                  <a class="social-icons__link" href="#">
+                    <svg class="social-icons__svg" width="20" height="20">
                       <use href="images/icons.svg#likedin"></use>
                     </svg>
                   </a>
@@ -335,90 +335,28 @@
               </div>
             </div>
           </div>
-          <div class="bottomForm">
-            <p>Zapisz się do newslettera</p>
+          <div class="bottomText">
+            <p class="bottomText__text">Zapisz się do newslettera</p>
 
-            <form class="modal-form" name="e-mail-footer">
+            <form class="bottom-form" name="e-mail-footer">
               <label>
-                <input class="email-btn" placeholder="E-mail" type="email" name="email" />
+                <input
+                  class="bottom-form__email-btn"
+                  placeholder="E-mail"
+                  type="email"
+                  name="email"
+                />
               </label>
               <button class="submit-btn" type="submit" name="submit">
                 Zapisz się
-                <svg class="btn-icon" width="20" height="20">
+                <svg class="submit-btn__icon" width="20" height="20">
                   <use href="images/icons.svg#icon-icon-send-1"></use>
                 </svg>
               </button>
             </form>
           </div>
         </div>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="close-btn" data-modal-close>&times;</button>
-
-            <p>Zostaw swoje dane w formularzu poniżej</p>
-
-            <form name="signup-form" class="main-form">
-              <div class="modal-form-one">
-                <label class="label" for="user-name"> Imię </label>
-                <div class="modal-modal-form">
-                  <input class="input-one" type="text" id="user-name" name="username" />
-                  <svg class="icons-svg" width="18" height="18">
-                    <use href="images/icons.svg#icon-Vector"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="modal-form-one">
-                <label class="label" for="telephone">Telefon</label>
-                <div class="modal-modal-form">
-                  <input class="input-two" type="tel" id="telephone" name="phone-number" />
-                  <svg class="icons-svg" width="18" height="18">
-                    <use href="images/icons.svg#icon-Vector-1"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="modal-form-one">
-                <label class="label" for="user-email">Email</label>
-                <div class="modal-modal-form">
-                  <input class="input-three" type="email" id="user-email" name="E-mail" />
-                  <svg class="icons-svg" width="18" height="18">
-                    <use href="images/icons.svg#icon-Vector-2"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="modal-form-one">
-                <label class="label" for="user-comments">Komentarz</label>
-                <div class="modal-modal-form">
-                  <textarea
-                    class="textarea"
-                    name="comments"
-                    id="user-comments"
-                    placeholder="Wprowadź text"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="checkbox-label">
-                <label>
-                  <input class="checkbox-input" type="checkbox" name="regulations" />
-                  <svg class="check-svg" width="16" height="15">
-                    <use href="images/icons.svg#icon-Vector-3"></use>
-                  </svg>
-                  <svg class="checkbox-svg-one" width="13" height="15">
-                    <use href="images/icons.svg#icon-Vector-4"></use>
-                  </svg>
-                  <span
-                    >Oświadczam iż akceptuję <a href="#"> Regulamin</a> i
-                    <a href="#">Politykę Prywatności.</a></span
-                  >
-                </label>
-              </div>
-              <button class="submit-modal-btn" type="submit">Wyślij</button>
-            </form>
-          </div>
-        </div>
       </footer>
     </div>
-
-    <script src="./js/modal.js"></script>
   </body>
 </html>
