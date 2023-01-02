@@ -536,7 +536,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/*modal*/
+/*MODAL*/
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -569,7 +569,7 @@ body {
   transform: translateX(30%) translateY(30%) rotate(90deg);
 }
 
-.close-btn {
+.modal__close-btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -771,7 +771,7 @@ body {
   right: 35px;
 }
 /*MODAL FORM*/
-.modal > p {
+.modal__text {
   font-size: 20px;
   font-weight: 700;
   color: var(--veryDark);
@@ -779,7 +779,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
-.input-one {
+/* .input-one {
   width: 100%;
   display: block;
   height: 40px;
@@ -796,8 +796,26 @@ body {
 .input-one:focus + svg {
   fill: var(--blue);
   transition: var(--transitionTime) var(--cubic);
-}
+} */
 
+.modal-form__input {
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 35px;
+  margin-left: 0px;
+  outline: 0;
+}
+.modal-form__input:focus {
+  border-color: var(--blue);
+  transition: var(--transitionTime) var(--cubic);
+}
+.modal-form__input:focus + svg {
+  fill: var(--blue);
+  transition: var(--transitionTime) var(--cubic);
+}
 .icons-svg {
   position: absolute;
   top: 12px;
@@ -807,7 +825,7 @@ body {
   fill: #2196f3;
 }
 
-.input-two {
+/* .input-two {
   display: block;
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 40px;
@@ -815,8 +833,8 @@ body {
   border-radius: 4px;
   padding-left: 35px;
   outline: 0;
-}
-.input-two:focus {
+} */
+/* .input-two:focus {
   border: 1px solid var(--blue);
   transition: var(--transitionTime) var(--cubic);
 }
@@ -842,7 +860,7 @@ body {
 .input-three:focus + svg {
   fill: var(--blue);
   transition: var(--transitionTime) var(--cubic);
-}
+} */
 
 .submit-modal-btn {
   margin-left: 164px;
@@ -854,11 +872,16 @@ body {
   height: 50px;
   outline: 0;
 }
-.modal-form-one {
+.modal-form__box {
   padding-left: 40px;
   margin-top: 10px;
 }
-.modal-modal-form {
+/* .modal-modal-form {
+  position: relative;
+  margin-top: 4px;
+  padding-right: 40px;
+} */
+.modal-form__wrapper {
   position: relative;
   margin-top: 4px;
   padding-right: 40px;
@@ -889,7 +912,11 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.label {
+/* .label {
+  font-size: 12px;
+  color: var(--gray);
+} */
+.modal-form__label {
   font-size: 12px;
   color: var(--gray);
 }

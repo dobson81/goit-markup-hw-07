@@ -478,41 +478,56 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button type="button" class="close-btn" data-modal-close>&times;</button>
+            <button type="button" class="modal__close-btn" data-modal-close>&times;</button>
 
-            <p>Zostaw swoje dane w formularzu poniżej</p>
+            <p class="modal__text">Zostaw swoje dane w formularzu poniżej</p>
 
-            <form name="signup-form" class="main-form">
-              <div class="modal-form-one">
-                <label class="label" for="user-name"> Imię </label>
-                <div class="modal-modal-form">
-                  <input class="input-one" type="text" id="user-name" name="username" />
+            <form name="signup-form" class="modal-form">
+              <div class="modal-form__box">
+                <label class="modal-form__label" for="user-name"> Imię </label>
+                <div class="modal-form__wrapper">
+                  <input
+                    class="modal-form__input modal-form__input--name"
+                    type="text"
+                    id="user-name"
+                    name="username"
+                  />
                   <svg class="icons-svg" width="18" height="18">
                     <use href="images/icons.svg#icon-Vector"></use>
                   </svg>
                 </div>
               </div>
-              <div class="modal-form-one">
-                <label class="label" for="telephone">Telefon</label>
-                <div class="modal-modal-form">
-                  <input class="input-two" type="tel" id="telephone" name="phone-number" />
+              <div class="modal-form__box">
+                <label class="modal-form__label" for="telephone">Telefon</label>
+                <div class="modal-form__wrapper">
+                  <input
+                    class="modal-form__input modal-form__input--tel"
+                    type="tel"
+                    id="telephone"
+                    name="phone-number"
+                  />
                   <svg class="icons-svg" width="18" height="18">
                     <use href="images/icons.svg#icon-Vector-1"></use>
                   </svg>
                 </div>
               </div>
-              <div class="modal-form-one">
-                <label class="label" for="user-email">Email</label>
-                <div class="modal-modal-form">
-                  <input class="input-three" type="email" id="user-email" name="E-mail" />
+              <div class="modal-form__box">
+                <label class="modal-form__label" for="user-email">Email</label>
+                <div class="modal-form__wrapper">
+                  <input
+                    class="modal-form__input modal-form__input--email"
+                    type="email"
+                    id="user-email"
+                    name="E-mail"
+                  />
                   <svg class="icons-svg" width="18" height="18">
                     <use href="images/icons.svg#icon-Vector-2"></use>
                   </svg>
                 </div>
               </div>
-              <div class="modal-form-one">
-                <label class="label" for="user-comments">Komentarz</label>
-                <div class="modal-modal-form">
+              <div class="modal-form__box">
+                <label class="modal-form__label" for="user-comments">Komentarz</label>
+                <div class="modal-form__wrapper">
                   <textarea
                     class="textarea"
                     name="comments"
