@@ -26,3 +26,26 @@
         
       }
 }  
+.clients{
+    &__box:hover {
+        border: 1px solid var(--defalutHoverColor);
+        transition: var(--mainTransition) var(--cubic);
+      }
+      &__link {
+        fill: #afb1b8
+      }
+      &__link:hover {
+        fill: var(--defalutHoverColor);
+        transition: var(--transitionTime) var(--cubic);
+      }
+      &__link:focus {
+        fill: var(--defalutHoverColor);
+        transition: var(--mainTransition) var(--cubic);
+      }
+}
+.clients{
+&__box:hover svg {
+    fill: var(--defalutHoverColor);
+    transition: var(--mainTransition) var(--cubic);
+  }
+}

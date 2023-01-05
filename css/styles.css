@@ -407,6 +407,11 @@ body {
   background: var(--darkGray);
   display: flex;
 }
+.footer__container {
+  display: flex;
+
+  padding-left: 15px;
+}
 
 .footer__logo {
   font-family: 'Raleway';
@@ -460,11 +465,6 @@ body {
   transition: var(--transitionTime) var(--cubic);
 }
 
-.footer__container {
-  display: flex;
-
-  padding-left: 15px;
-}
 .social-icons {
   margin-left: 70px;
   padding-top: 72px;
@@ -477,13 +477,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.3px;
 }
-/* .footer-icons {
-  width: 206px;
 
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-} */
 .social-icons__box {
   width: 206px;
 
@@ -519,6 +513,53 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*FOOTER FORM*/
+
+.bottomText {
+  margin-left: 78px;
+}
+
+.bottomText__text {
+  color: var(--white);
+  margin-top: 72px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.bottom-form__email-btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 358px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 30px;
+}
+.submit-btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--blue);
+  padding-right: 40px;
+  color: var(--white);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  line-height: 1.87;
+  font-family: inherit;
+  position: relative;
+  cursor: pointer;
+}
+.submit-btn__icon {
+  fill: var(--white);
+  position: absolute;
+  top: 14px;
+  right: 35px;
 }
 /*MODAL*/
 .is-hidden {
@@ -598,15 +639,6 @@ body {
   transition: var(--transitionTime) var(--cubic);
 }
 
-/* .images-portfolio {
-  list-style-type: none;
-  margin-top: 56px;
-  padding: 0px 15px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  background-color: var(--white);
-} */
 .cards {
   list-style-type: none;
   margin-top: 56px;
@@ -625,20 +657,6 @@ body {
   transition: var(--transitionTime) var(--cubic);
 }
 
-/* .images-portfolio h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-} */
-/* .cards h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-} */
 .cards__title {
   font-weight: 700;
   font-size: 18px;
@@ -646,16 +664,7 @@ body {
 
   letter-spacing: 0.06em;
 }
-/* .images-portfolio span {
-  font-size: 16px;
-  line-height: 1.87;
 
-  margin-top: 4px;
-  letter-spacing: 0.03em;
-  display: flex;
-  flex-direction: column;
-  color: var(--gray);
-} */
 .cards__name {
   font-size: 16px;
   line-height: 1.87;
@@ -709,51 +718,7 @@ body {
   padding-bottom: 49px;
   padding-left: 24px;
 }
-/*FOOTER FORM*/
-.bottomText__text {
-  color: var(--white);
-  margin-top: 72px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.bottomText {
-  margin-left: 78px;
-}
 
-.bottom-form__email-btn {
-  margin-top: 20px;
-  height: 50px;
-  width: 358px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 30px;
-}
-.submit-btn {
-  margin-left: 12px;
-  width: 200px;
-  height: 50px;
-  background-color: var(--blue);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--blue);
-  padding-right: 40px;
-  color: var(--white);
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  line-height: 1.87;
-  font-family: inherit;
-  position: relative;
-  cursor: pointer;
-}
-.submit-btn__icon {
-  fill: var(--white);
-  position: absolute;
-  top: 14px;
-  right: 35px;
-}
 /*MODAL FORM*/
 .modal__text {
   font-size: 20px;
