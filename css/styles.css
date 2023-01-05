@@ -223,6 +223,20 @@ body {
 .container .work__images {
   margin: auto;
 }
+
+.box-box {
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  bottom: 4px;
+}
+.work {
+  padding-top: 0;
+}
 .work__title {
   font-weight: 700;
   font-size: 36px;
@@ -246,20 +260,6 @@ body {
   position: relative;
 }
 
-.box-box {
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  bottom: 4px;
-}
-.work {
-  padding-top: 0;
-}
-
 .work__text {
   text-transform: uppercase;
   font-size: 14px;
@@ -268,9 +268,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* .team {
-  background: var(--bright);
-} */
 .stuff {
   background-color: var(--bright);
 }
@@ -364,24 +361,14 @@ body {
 .our-clients-container {
   padding: 0px 15px;
 }
-/* .ourClients {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-  fill: rgba(255, 255, 255, 0.6);
-} */
+
 .clients__title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
 }
-/* .container-icons {
-  display: flex;
 
-  justify-content: space-between;
-} */
 .clients__icons {
   display: flex;
 
@@ -396,7 +383,6 @@ body {
   align-items: center;
   padding-top: 17.71px;
   padding-bottom: 14.25px;
-  /* cursor: pointer; */
 }
 .clients__box:hover {
   border: 1px solid var(--blue);

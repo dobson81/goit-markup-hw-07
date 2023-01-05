@@ -1,5 +1,5 @@
 .page-header{
-     background-color: $primaryColor;
+     background-color: var(--white);
      border-bottom: 1px solid #ececec;
     }
     .top-box
@@ -8,9 +8,9 @@
     }
     .top-box__logo-link
     {
-        font-family: '$seconadrFont';
-  color: $primaryFonColor;
-  font-weight: $secondaryFontWeight;
+        font-family: var(--secondaryFont);
+  color: var(--primaryFontColor);
+  font-weight: var(--secondaryFontWeight);
   font-size: 26px;
   line-height: 0.72;
   letter-spacing: 0.03em;
@@ -19,7 +19,7 @@
   text-decoration: none;  
 
   &__logo-link--blue {
-color: $defalutHoverColor;
+color: var(--defalutHoverColor);
   }
     }
     .menu
@@ -28,8 +28,8 @@ color: $defalutHoverColor;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
-  font-size: $primaryFontSize;
-  font-weight: $primaryFontWeight;
+  font-size: var(--primaryFontSize);
+  font-weight: var(--primaryFontWeight);
   line-height: 1.7;
   letter-spacing: 0.02em;
   display: flex;
@@ -40,12 +40,12 @@ color: $defalutHoverColor;
   &__item--line::after
   {
     content: '';
-    border: 2px solid $defalutHoverColor;
+    border: 2px solid var(--defalutHoverColor);
     display: block;
     position: relative;
     top: 33px;
     border-radius: 4px;
-    background-color: $defalutHoverColor;
+    background-color: var(--defalutHoverColor);
   }
   &__link {
     color: inherit;
@@ -55,7 +55,7 @@ color: $defalutHoverColor;
 }
   .__link:hover,
 .menu__link:focus {
-  color: $defalutHoverColor;
+  color: var(--defalutHoverColor);
   transition: var(--transitionTime) var(--cubic);
 }
 .contacts {
@@ -77,9 +77,9 @@ color: $defalutHoverColor;
   }
   .contacts__link:hover,
 .contacts__link:focus {
-  color: $defalutHoverColor;
-  fill: $defalutHoverColor;
-  transition: $mainTransition $cubic;
+  color: var(--defalutHoverColor);
+  fill: var(--defalutHoverColor);
+  transition: var(--mainTransition)  var(--cubic);
 
 }
 .contacts__icon-envelope {

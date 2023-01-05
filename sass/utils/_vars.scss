@@ -1,20 +1,43 @@
-// $defalutFontColor: #efefef;
-// $fontFamily: 'roboto', sans-serif';
+
 
 /*COLORS*/
-$primaryColor: #ffffff;
-$secondaryDarkColor: #212121;
-
-$defalutHoverColor : #2196f3;
-$primaryFontColor: #000000;
+// $primaryColor: #ffffff;
+// $secondaryDarkColor: #212121;
+// $secondaryGraycolor:#2f303a;
+// $defalutHoverColor : #2196f3;
+// $primaryFontColor: #000000;
 /*FONTS*/
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Raleway';
-$primaryFontWeight: 500;
-$secondaryFontWeight: 700;
-$primaryFontSize: 14px;
-$secondaryFontSize: 16px;
+// $primaryFont: 'Roboto', sans-serif;
+// $secondaryFont: 'Raleway';
+// $primaryFontWeight: 500;
+// $secondaryFontWeight: 700;
+// $primaryFontSize: 14px;
+// $secondaryFontSize: 16px;
 /*TRANSITION*/
-$mainTransition: 250ms;
+// $mainTransition: 250ms;
 /*CUBIC*/
-$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+// $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+/*BORDER-RADIUS*/
+// $bRadius: 4px;
+
+
+/*SKOPIOWANE Z CSS*/
+.root{
+    /*COLORS*/
+--primaryColor: #ffffff;
+--secondaryDarkColor: #212121;
+--defalutHoverColor: #2196f3;
+--secondaryGrayColor: #2f303a;
+/*FONTS*/
+--primaryFontColor: #000000;
+--primaryFont: 'Roboto', sans-serif;
+--secondaryFont: 'Raleway';
+--primaryFontWeight: 500;
+--secondaryFontWeight: 700;
+--primaryFontSize: 14px;
+--secondaryFontSize: 16px;
+/*CUBIC*/
+--cubic: cubic-bezier(0.4, 0, 0.2, 1);
+/*TRANSITION*/
+--mainTransition: 250ms;
+}
