@@ -1,2 +1,20 @@
-$defalutFontColor: #efefef;
-$fontFamily: 'roboto', sans-serif';
+// $defalutFontColor: #efefef;
+// $fontFamily: 'roboto', sans-serif';
+
+/*COLORS*/
+$primaryColor: #ffffff;
+$secondaryDarkColor: #212121;
+
+$defalutHoverColor : #2196f3;
+$primaryFontColor: #000000;
+/*FONTS*/
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Raleway';
+$primaryFontWeight: 500;
+$secondaryFontWeight: 700;
+$primaryFontSize: 14px;
+$secondaryFontSize: 16px;
+/*TRANSITION*/
+$mainTransition: 250ms;
+/*CUBIC*/
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

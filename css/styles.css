@@ -38,9 +38,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.worker-list-section {
-  background-color: var(--bright);
-}
+
 .page-header {
   background-color: var(--white);
 
@@ -111,9 +109,6 @@ body {
   align-items: center;
 }
 
-/* .contacts__item:first-child {
-  margin-right: 50px;
-} */
 .contacts__item--left {
   margin-right: 50px;
 }
@@ -276,6 +271,9 @@ body {
 /* .team {
   background: var(--bright);
 } */
+.stuff {
+  background-color: var(--bright);
+}
 .stuff__big-title {
   font-weight: 700;
   font-size: 36px;

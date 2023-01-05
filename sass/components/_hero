@@ -1,0 +1,16 @@
+.hero {
+  background: #2f303a;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, var(--gradientColor), var(--gradientColor)),
+    url('../images/img10.jpg');
+  max-width: 1600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
