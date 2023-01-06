@@ -7,7 +7,7 @@
   .buttons__item {
     padding: 6px 22px;
     border: none;
-    background: #f5f4fa;
+    background: var(--bright);
     border-radius: 4px;
     margin-right: 8px;
     font-family: 'Roboto';
@@ -16,7 +16,8 @@
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-  
+  }
+  .buttons{
   &__item:hover,
   &__item:focus {
     color: var(--primaryColor);
@@ -27,4 +28,4 @@
       0px 2px 2px rgba(0, 0, 0, 0.1);
     transition: var(--mainTransition) var(--cubic);
   }
-}
+  }

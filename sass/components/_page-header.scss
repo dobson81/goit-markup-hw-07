@@ -1,5 +1,5 @@
 .page-header{
-     background-color: var(--white);
+     background-color: var(--primaryColor);
      border-bottom: 1px solid #ececec;
     }
     .top-box
@@ -18,9 +18,11 @@
   align-items: center;
   text-decoration: none;  
 
-  &__logo-link--blue {
-color: var(--defalutHoverColor);
-  }
+
+    }
+    .top-box__logo-link--blue
+    {
+      color: var(--defalutHoverColor);
     }
     .menu
     {
@@ -53,16 +55,16 @@ color: var(--defalutHoverColor);
     line-height: 1.17;
   }
 }
-  .__link:hover,
+  .menu__link:hover,
 .menu__link:focus {
   color: var(--defalutHoverColor);
-  transition: var(--transitionTime) var(--cubic);
+  transition: var(--mainTransition) var(--cubic);
 }
 .contacts {
     list-style-type: none;
     display: flex;
     margin-left: 345px;
-    font-size: 14px;
+    font-size: var(--primaryFontSize);
     font-weight: 500;
     color: var(--gray);
     align-items: center;

@@ -38,7 +38,7 @@
     .social-icons{
         &__circle:hover,
 &__circle:focus {
-  background-color: var(--primaryColor);
+  background-color: var(--defalutHoverColor);
   transition: var(--mainTransition) var(--cubic);
 }
     }
