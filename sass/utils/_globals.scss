@@ -1,11 +1,16 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
 body{
-    font-family: $primaryFont;
-    color: $secondaryDarkColor;
+    font-family: var(--primaryFont);
+    color: var(--secondaryDarkColor);
     background-color: #e5e5e5;
 }
 .wrapper
 {
-    background-color: $primaryColor;
+    background-color: var(--primaryColor);
     margin:auto;
 }
 .container {

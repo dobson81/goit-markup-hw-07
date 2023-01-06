@@ -816,9 +816,7 @@ body {
 .checkbox__text {
   cursor: pointer;
 }
-/* .checkbox a {
-  color: var(--blue);
-} */
+
 .checkbox__link {
   color: var(--blue);
 }

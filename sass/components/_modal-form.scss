@@ -79,3 +79,46 @@
         color: rgba(117, 117, 117, 0.5);
       }
     }
+    .checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        color: var(--gray);
+        line-height: 1.71;
+        font-size: var(--primaryFontSize);
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+        position: relative;
+      
+      &__input {
+        visibility: hidden;
+      }
+      &__text {
+        cursor: pointer;
+      }
+      
+      &__link {
+        color: var(--defalutHoverColor);
+      }
+      &__icon {
+        position: absolute;
+        top: 2px;
+        left: 53px;
+        fill: transparent;
+      
+        fill: var(--secondaryDarkColor);
+      }
+      
+      &__icon-pipe {
+        position: absolute;
+        top: 2px;
+        left: 55px;
+        opacity: 1;
+      }
+      &__input:checked + svg {
+        background-color: #2196f3;
+        fill: transparent;
+        border-radius: 2px;
+      }
+    }

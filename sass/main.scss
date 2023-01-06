@@ -1,3 +1,5 @@
+@import"./utils/_globals.scss";
+@import"./utils/_vars.scss";
 @import"./components/page-header";
 @import"./components/_features";
 @import"./components/_hero";
@@ -11,3 +13,4 @@
 @import"./components/_modal";
 @import"./components/_portfolio-buttons";
 @import"./components/_portfolio-cards";
+@import"./components/_modal-form";
